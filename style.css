@@ -1,0 +1,172 @@
+html { /*Sets background colour of website to grey*/
+	background-color: #DCDCDC;
+}
+ul { /*sets appearance of menu bar*/
+	  list-style-type: none;
+	  width:100%; /*menu bar stretches across entire page*/
+	  margin: 0;
+	  padding: 0;
+	  overflow: hidden;/* hides content that reaches outside of menu bar*/
+	  background-color: #000000; /*black bmenu bar background*/
+	  position: fixed; /*always fixed at the top of the screen*/
+	  top:0;
+	  left:0;
+	  font-family: arial; /* text in menu is in arail*/
+	  z-index:110;/*higher index so that no content on page blocks out menu bar while scrolling*/
+}
+li {
+    float: left; /*items in menu bar placed on the left*/
+}
+
+li a {/*text link appearance settings*/
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.active { /*background colour on selected munu bar link is red when active*/
+    background-color: #E9102D;
+}
+
+/* Change the link color to red when cursor hovers over*/
+li a:hover {
+    background-color: #E9102D;
+}
+h1 {/*sets display for text placed under h1*/
+    color: black;
+    font-family: arial;
+    font-size: 250%;
+	text-align:center;
+}
+
+h2{/*sets display for text placed under h2*/
+	margin-top: -60px;
+	font-weight:normal; 
+	font-size:90%;
+	font-family:arial;"
+}
+p  {/*sets display for text placed under p/normal paragraphs*/
+    color: black;
+    font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    font-size: 90%;
+	float: left;
+}
+#logo{/*sets display for IBZ logo on every webpage*/
+	margin-top: -30px;
+	padding-left: 10px;
+}
+
+
+
+table{/*sets display for tables unde contact info.*/
+	margin-left: 20%;
+	position:center;
+	height:40%;
+	width: 60%;
+	background-image:url("images/texture.jpg");/*uses a texture image to set a background texture for table*/
+}
+table,td{ /*sets display for table and and for the data within the table*/
+	border: 1px solid;
+	border-color: black;
+	border-collapse:collapse; /*brings border lines together*/
+}
+th{/*sets display for table header specifically*/
+	background-color:#E9102D;
+	text-align:center;
+	color: black;
+    font-family:arial;
+    font-weight: bold;
+	border: 1 px solid;
+}
+td{/*sets display for table data specifically*/
+	text-align:left;
+	color: black;
+    font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    font-size: 90%;
+}
+
+#map{
+    z-index: 100;/* z-index is smaller than z-index of menu bar therefore it will not block out menu bar.*/
+    position: absolute; /*position will never change under any circumstance*/
+	width:600px;
+	height:500px;
+	background:#E9102D;
+	float:left;
+	margin-right:0%;
+	margin-left:2%;
+	margin-bottom:0%;
+	margin-top:0%;
+}
+div.gallery { /* sets display of the images in the gallery*/
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 300px;
+	position: relative;
+}
+
+div.gallery:hover { /* sets diplay of images in the gallery when they are hovered over with cursor*/
+	border: solid 1px;
+	border-style: solid;
+	border-color:#E9102D;
+}
+
+
+.container{ /*sets display of genereal image container*/
+  position: relative;
+  width: 100%;
+  float:left;
+}
+
+.image {/* sets display of the image within the container and gallery*/
+  display: block;
+  width: 100%;
+  height: auto; /*height is automatically adjusted*/
+}
+
+.overlay { /*sets display of overlay/text thats appears images*/
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0; /* opacity set to 0 so that overlay can not be seen til image is hovered over*/
+  transition: .5s ease;
+  background: rgba(0,0,0,0.5);/*sets background to be slightly darker but image is still visible behind overlay*/ 
+}
+
+.container:hover .overlay {/*sets display of container when hovered over*/
+  opacity: 1;/* opacity set to 1 so overlay becomes visible when image is hovered over*/
+}
+
+.text {/*sets display of text within container*/
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /*sets position of text within container to center*/
+  -ms-transform: translate(-50%, -50%);
+}
+
+#container {
+   height:100%;
+}
+
+.bodyy {
+   margin-bottom:100px;   /* Height of the footer */
+}
+
+.footer {
+    bottom: 0px;
+	left:0px;
+	right: 0px;
+	margin-bottom: 0px;
+    width: 100%;
+	height:100px;
+	float: left;
+}
